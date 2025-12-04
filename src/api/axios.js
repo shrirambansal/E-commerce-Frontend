@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "/api", // change after deploy
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 // Send token automatically
